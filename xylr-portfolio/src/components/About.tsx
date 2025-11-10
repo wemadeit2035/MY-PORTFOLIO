@@ -14,6 +14,14 @@ const About = () => {
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
+  const downloadCV = () => {
+    // Direct download link to your PDF file
+    const link = document.createElement("a");
+    link.href = "/documents/Amos Wetu Musafiri - Full Stack Web Developer.pdf"; // Path to your PDF file
+    link.download = "Amos Wetu Musafiri - Full Stack Web Developer.pdf";
+    link.click();
+  };
+
   return (
     <section id="cv" className="cv-section">
       <div className="cv-container">
@@ -276,46 +284,10 @@ const About = () => {
                 </div>
               </div>
             </section>
-
-            {isMobile && (
-              <section className="cv-references">
-                <h2>References</h2>
-                <div className="references-grid">
-                  <div className="reference-item">
-                    <div className="reference-name">Sibusiso</div>
-                    <div className="reference-position">Vibe Cafe Owner</div>
-                    <div className="reference-phone">083 212 3575</div>
-                  </div>
-                  <div className="reference-item">
-                    <div className="reference-name">Angel Clement</div>
-                    <div className="reference-position">
-                      Scrooge Diner Manager
-                    </div>
-                    <div className="reference-phone">087 897 6937</div>
-                  </div>
-                  <div className="reference-item">
-                    <div className="reference-name">Angela Hancock</div>
-                    <div className="reference-position">
-                      Coca Cola, Producer
-                    </div>
-                    <div className="reference-phone">073 788 9873</div>
-                  </div>
-                  <div className="reference-item">
-                    <div className="reference-name">Duane Stone</div>
-                    <div className="reference-position">(Pontonia), Client</div>
-                    <div className="reference-phone">068 508 5729</div>
-                  </div>
-                  <div className="reference-item">
-                    <div className="reference-name">Mr. Pebbles</div>
-                    <div className="reference-position">
-                      BNOG Sound, Founder
-                    </div>
-                    <div className="reference-phone">082 599 6942</div>
-                  </div>
-                </div>
-              </section>
-            )}
           </div>
+          <button onClick={downloadCV} className="download-btn">
+            <i className="fas fa-download"></i> Download My CV
+          </button>
         </div>
       </div>
     </section>

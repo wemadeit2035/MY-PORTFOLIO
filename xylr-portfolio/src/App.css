@@ -591,7 +591,7 @@ footer {
   }
 }
 
-/* CV Styles */
+/* About Styles */
 .cv-section {
   padding: 20px;
   max-width: 1500px;
@@ -1060,5 +1060,48 @@ footer {
   .education-item,
   .timeline-content {
     padding: 15px;
+  }
+}
+
+.download-btn {
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.download-btn i {
+  margin-right: 8px;
+}
+
+/* Desktop - Top Right */
+@media (min-width: 769px) {
+  .download-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+/* Mobile - Last in content */
+@media (max-width: 768px) {
+  .download-btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
   }
 }
