@@ -22,6 +22,11 @@ const About = () => {
     link.click();
   };
 
+  const viewCertificate = () => {
+    const certificateUrl = "/documents/DIA-Certificate.pdf";
+    window.open(certificateUrl, "_blank");
+  };
+
   return (
     <section id="cv" className="cv-section">
       <div className="cv-container">
@@ -287,6 +292,12 @@ const About = () => {
           </div>
           <button onClick={downloadCV} className="download-btn">
             <i className="fas fa-download"></i> Download My CV
+          </button>
+        </div>
+        {/* Certificate Button - Shows on both mobile and desktop */}
+        <div className="certificate-section">
+          <button className="certificate-btn" onClick={viewCertificate}>
+            <i className="fas fa-eye"></i> View Certificate
           </button>
         </div>
       </div>

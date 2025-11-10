@@ -1105,3 +1105,41 @@ footer {
     margin-top: 20px;
   }
 }
+
+.certificate-section {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.certificate-btn {
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.certificate-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #e67e22, #d35400);
+}
+
+.certificate-btn i {
+  margin-right: 8px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .certificate-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
