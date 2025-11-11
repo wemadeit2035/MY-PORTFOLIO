@@ -141,38 +141,127 @@ const Projects = () => {
   ];
 
   return (
-    <section className="projects" id="projects">
-      <br />
-      <br />
-      <h2 className="section-title">Featured Projects</h2>
-      <br />
-      <br />
-      <div className="projects-grid">
-        {projects.map((project, index) => (
-          <a
-            key={index}
-            href={project.link}
-            className="project-card"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div
-              className="project-image"
-              style={{ backgroundImage: `url('${project.image}')` }}
-            ></div>
-            <div className="project-info">
-              <h3>{project.title}</h3>
-              <div className="project-tags">
-                {project.tags.map((tag, tagIndex) => (
-                  <span key={tagIndex} className="tag">
-                    {tag}
-                  </span>
-                ))}
+    <section
+      className="min-h-screen bg-cover bg-center bg-fixed py-8"
+      style={{ backgroundImage: "url('/images/samuel.webp')" }}
+      id="projects"
+    >
+      <h2 className="text-4xl font-bold text-center bg-black/50 backdrop-blur-lg py-6 text-white w-full">
+        Featured Projects
+      </h2>
+
+      <div className="max-w-7xl mx-auto px-4 py-12">
+        {/* Projects Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <a
+              key={index}
+              href={project.link}
+              className="group bg-black/50 backdrop-blur-lg rounded-2xl overflow-hidden border border-white/10 transition-all duration-500 hover:transform hover:-translate-y-3 hover:shadow-2xl hover:border-accent/50"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {/* Project Image */}
+              <div
+                className="h-48 bg-cover bg-center relative overflow-hidden"
+                style={{ backgroundImage: `url('${project.image}')` }}
+              >
+                {/* Overlay on hover */}
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-all duration-300 flex items-center justify-center">
+                  <div className="opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                    <span className="bg-accent text-primary font-bold px-6 py-3 rounded-full text-lg">
+                      View Project →
+                    </span>
+                  </div>
+                </div>
               </div>
-              <p>{project.description}</p>
+
+              {/* Project Info */}
+              <div className="p-6">
+                {/* Project Title */}
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-accent transition-colors duration-300">
+                  {project.title}
+                </h3>
+
+                {/* Project Tags */}
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.tags.map((tag, tagIndex) => (
+                    <span
+                      key={tagIndex}
+                      className="bg-white/10 text-yellow-400 px-3 py-1 rounded-full text-sm font-medium border border-white/20 group-hover:border-accent/30 transition-colors duration-300"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Project Description */}
+                <p className="text-gray-300 group-hover:text-white transition-colors duration-300 leading-relaxed">
+                  {project.description}
+                </p>
+
+                {/* View Project Link */}
+                <div className="mt-4 flex items-center text-accent font-semibold opacity-0 group-hover:opacity-100 transform translate-x-[-10px] group-hover:translate-x-0 transition-all duration-300">
+                  <span>Explore Project</span>
+                  <span className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
+                    →
+                  </span>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        {/* Call to Action */}
+        <div className="text-center mt-16">
+          <div className="bg-gradient-to-r from-accent/10 to-blue-500/10 backdrop-blur-lg border border-accent/20 rounded-2xl p-8 max-w-2xl mx-auto">
+            <h3 className="text-2xl font-bold text-white mb-4">
+              Like What You See?
+            </h3>
+            <p className="text-gray-300 mb-6">
+              I'm always working on new projects and open to collaborations.
+              Let's build something amazing together!
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="#contact"
+                className="bg-accent text-primary font-bold py-3 px-8 rounded-full hover:bg-[#1fe000] transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                Start a Project
+              </a>
+              <a
+                href="https://github.com/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/10 text-white font-bold py-3 px-8 rounded-full border border-white/20 hover:bg-white/20 transform hover:-translate-y-1 transition-all duration-300"
+              >
+                View GitHub
+              </a>
             </div>
-          </a>
-        ))}
+          </div>
+        </div>
+
+        {/* Stats Section */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+          <div className="text-center bg-black/30 backdrop-blur-sm p-6 rounded-2xl border border-white/10">
+            <div className="text-3xl font-bold text-accent mb-2">
+              {projects.length}+
+            </div>
+            <div className="text-gray-300">Projects Completed</div>
+          </div>
+          <div className="text-center bg-black/30 backdrop-blur-sm p-6 rounded-2xl border border-white/10">
+            <div className="text-3xl font-bold text-accent mb-2">10+</div>
+            <div className="text-gray-300">Technologies</div>
+          </div>
+          <div className="text-center bg-black/30 backdrop-blur-sm p-6 rounded-2xl border border-white/10">
+            <div className="text-3xl font-bold text-accent mb-2">100%</div>
+            <div className="text-gray-300">Client Satisfaction</div>
+          </div>
+          <div className="text-center bg-black/30 backdrop-blur-sm p-6 rounded-2xl border border-white/10">
+            <div className="text-3xl font-bold text-accent mb-2">24/7</div>
+            <div className="text-gray-300">Support Ready</div>
+          </div>
+        </div>
       </div>
     </section>
   );
