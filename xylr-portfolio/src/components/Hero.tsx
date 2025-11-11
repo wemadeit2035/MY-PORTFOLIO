@@ -2,10 +2,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section
-      className="min-h-screen flex items-center justify-center bg-cover bg-center bg-fixed relative"
-      style={{ backgroundImage: "url('/images/omid.webp')" }}
-    >
+    <section>
       {/* Gradient Overlays */}
       <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-transparent to-purple-900/30"></div>
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>

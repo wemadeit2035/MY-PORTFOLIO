@@ -43,11 +43,7 @@ const Skills = () => {
   ];
 
   return (
-    <section
-      id="skills"
-      className="min-h-screen bg-cover bg-center bg-fixed py-8"
-      style={{ backgroundImage: "url('/images/samuel.webp')" }}
-    >
+    <section>
       <h2 className="text-4xl mt-12 font-bold text-center bg-black/50 backdrop-blur-lg py-6 text-white w-full">
         Expertise
       </h2>

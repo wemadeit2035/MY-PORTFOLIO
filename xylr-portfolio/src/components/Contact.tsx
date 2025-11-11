@@ -1,11 +1,7 @@
 const Contact = () => {
   return (
-    <section
-      className="min-h-screen bg-cover bg-center bg-fixed py-8"
-      style={{ backgroundImage: "url('/images/samuel.webp')" }}
-      id="contact"
-    >
-      <h2 className="text-4xl font-bold text-center bg-black/50 backdrop-blur-lg py-6 text-white w-full">
+    <section>
+      <h2 className="text-4xl mt-10 font-bold text-center bg-black/50 backdrop-blur-lg py-6 text-white w-full">
         Get In Touch
       </h2>
 

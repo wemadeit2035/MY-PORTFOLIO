@@ -34,15 +34,12 @@ const Footer = () => {
         {/* Copyright Text */}
         <div className="text-center">
           <p className="text-gray-300 font-medium">
-            &copy; {new Date().getFullYear()} XYLR Technologies. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} XYLR Technologies.
           </p>
 
           {/* Additional Info */}
           <div className="mt-4 flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-gray-400">
             <span>Built using React & Tailwind CSS</span>
-            <span className="hidden sm:block">•</span>
-            <span>Designed for performance & accessibility</span>
           </div>
 
           {/* Contact Email */}

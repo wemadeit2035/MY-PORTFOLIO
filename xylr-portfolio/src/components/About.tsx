@@ -27,11 +27,7 @@ const About = () => {
   };
 
   return (
-    <section
-      id="cv"
-      className="min-h-screen mt-10 bg-cover bg-center bg-fixed"
-      style={{ backgroundImage: "url('/images/samuel.webp')" }}
-    >
+    <section>
       <div className="max-w-7xl mx-auto px-4 py-8">
         {/* Header Section */}
         <header className="bg-gradient-to-br from-gray-800 to-blue-600 text-white rounded-2xl p-8 mb-8 text-center shadow-2xl">
