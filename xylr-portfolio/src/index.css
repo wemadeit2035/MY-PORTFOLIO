@@ -11,6 +11,12 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 body {
   font-family: "Inter", sans-serif;
   background-image: url("/images/samuel.webp");
@@ -25,15 +31,4 @@ body {
 
 html {
   scroll-behavior: smooth;
-}
-
-/* Custom component classes */
-@layer components {
-  .section-title {
-    @apply text-4xl font-bold text-center bg-black/50 backdrop-blur-lg py-4 text-white w-full;
-  }
-
-  .cta-button {
-    @apply inline-flex items-center gap-4 px-8 py-4 bg-[#24ff00] text-[#202020] font-semibold rounded-full transition-transform duration-300 hover:-translate-y-1 border-none cursor-pointer text-lg;
-  }
 }
