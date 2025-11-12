@@ -44,13 +44,9 @@ const Skills = () => {
 
   return (
     <section>
-      <h2 className="text-4xl mt-20 font-bold text-center bg-black/50 backdrop-blur-lg py-6 text-white w-full">
-        Expertise
-      </h2>
-
       <div className="max-w-7xl mx-auto px-4 py-12">
         {/* Additional Skills Section */}
-        <div className="mt-15 bg-black/50 backdrop-blur-lg rounded-2xl p-8 mb-10 border border-white/10">
+        <div className="mt-20 bg-black/50 backdrop-blur-lg rounded-2xl p-8 mb-10 border border-white/10">
           <h3 className="text-2xl font-bold text-white text-center mb-8">
             Technical Proficiencies
           </h3>
