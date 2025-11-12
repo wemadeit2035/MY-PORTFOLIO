@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
 
       {/* Main Content */}
-      <div className="relative z-10 w-full max-w-4xl mx-auto text-center">
+      <div className="relative mt-20 z-10 w-full max-w-4xl mx-auto text-center">
         <div className="space-y-6 py-8">
           {/* Premium Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-lg border border-white/20 rounded-full px-4 py-2 mb-4">
