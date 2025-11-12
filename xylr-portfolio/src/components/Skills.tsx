@@ -44,42 +44,13 @@ const Skills = () => {
 
   return (
     <section>
-      <h2 className="text-4xl mt-12 font-bold text-center bg-black/50 backdrop-blur-lg py-6 text-white w-full">
+      <h2 className="text-4xl mt-20 font-bold text-center bg-black/50 backdrop-blur-lg py-6 text-white w-full">
         Expertise
       </h2>
 
       <div className="max-w-7xl mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {skills.map((skill, index) => (
-            <div
-              key={index}
-              className="group bg-black/50 backdrop-blur-lg p-8 rounded-2xl border border-white/10 text-center transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-2xl hover:border-accent/50"
-            >
-              {/* Icon Container */}
-              <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-accent/20 to-blue-500/20 rounded-2xl flex items-center justify-center group-hover:from-accent/30 group-hover:to-blue-500/30 transition-all duration-300">
-                <i
-                  className={`${skill.icon} text-6xl text-accent group-hover:text-white group-hover:scale-110 transition-all duration-300`}
-                ></i>
-              </div>
-
-              {/* Skill Name */}
-              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-accent transition-colors duration-300">
-                {skill.name}
-              </h3>
-
-              {/* Skill Description */}
-              <p className="text-gray-300 group-hover:text-white transition-colors duration-300">
-                {skill.description}
-              </p>
-
-              {/* Hover Effect Border */}
-              <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-accent/30 transition-all duration-300 pointer-events-none"></div>
-            </div>
-          ))}
-        </div>
-
         {/* Additional Skills Section */}
-        <div className="mt-16 bg-black/50 backdrop-blur-lg rounded-2xl p-8 border border-white/10">
+        <div className="mt-15 bg-black/50 backdrop-blur-lg rounded-2xl p-8 mb-10 border border-white/10">
           <h3 className="text-2xl font-bold text-white text-center mb-8">
             Technical Proficiencies
           </h3>
@@ -158,6 +129,35 @@ const Skills = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-6">
+          {skills.map((skill, index) => (
+            <div
+              key={index}
+              className="group bg-black/50 backdrop-blur-lg p-8 rounded-2xl border border-white/10 text-center transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-2xl hover:border-accent/50"
+            >
+              {/* Icon Container */}
+              <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-accent/20 to-blue-500/20 rounded-2xl flex items-center justify-center group-hover:from-accent/30 group-hover:to-blue-500/30 transition-all duration-300">
+                <i
+                  className={`${skill.icon} text-6xl text-accent group-hover:text-white group-hover:scale-110 transition-all duration-300`}
+                ></i>
+              </div>
+
+              {/* Skill Name */}
+              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-accent transition-colors duration-300">
+                {skill.name}
+              </h3>
+
+              {/* Skill Description */}
+              <p className="text-gray-300 group-hover:text-white transition-colors duration-300">
+                {skill.description}
+              </p>
+
+              {/* Hover Effect Border */}
+              <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-accent/30 transition-all duration-300 pointer-events-none"></div>
+            </div>
+          ))}
         </div>
 
         {/* Call to Action */}

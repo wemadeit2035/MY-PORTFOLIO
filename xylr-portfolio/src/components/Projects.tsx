@@ -142,7 +142,7 @@ const Projects = () => {
 
   return (
     <section>
-      <h2 className="text-4xl mt-10 font-bold text-center bg-black/50 backdrop-blur-lg py-6 text-white w-full">
+      <h2 className="text-4xl mt-20 font-bold text-center bg-black/50 backdrop-blur-lg py-6 text-white w-full">
         Featured Projects
       </h2>
 
@@ -173,18 +173,18 @@ const Projects = () => {
               </div>
 
               {/* Project Info */}
-              <div className="p-6">
+              <div className="p-4 md:p-6 flex flex-col h-full">
                 {/* Project Title */}
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-accent transition-colors duration-300">
+                <h3 className="text-lg md:text-xl font-bold text-white mb-2 md:mb-3 group-hover:text-accent transition-colors duration-300 line-clamp-2">
                   {project.title}
                 </h3>
 
                 {/* Project Tags */}
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-1 md:gap-2 mb-3 md:mb-4">
                   {project.tags.map((tag, tagIndex) => (
                     <span
                       key={tagIndex}
-                      className="bg-white/10 text-yellow-400 px-3 py-1 rounded-full text-sm font-medium border border-white/20 group-hover:border-accent/30 transition-colors duration-300"
+                      className="bg-white/10 text-yellow-400 px-2 py-1 rounded-full text-xs md:text-sm font-medium border border-white/20 group-hover:border-accent/30 transition-colors duration-300"
                     >
                       {tag}
                     </span>
@@ -192,12 +192,14 @@ const Projects = () => {
                 </div>
 
                 {/* Project Description */}
-                <p className="text-gray-300 group-hover:text-white transition-colors duration-300 leading-relaxed">
-                  {project.description}
-                </p>
+                <div className="flex-grow">
+                  <p className="text-gray-300 group-hover:text-white transition-colors duration-300 leading-relaxed text-sm md:text-base line-clamp-3 md:line-clamp-none">
+                    {project.description}
+                  </p>
+                </div>
 
-                {/* View Project Link */}
-                <div className="mt-4 flex items-center text-accent font-semibold opacity-0 group-hover:opacity-100 transform translate-x-[-10px] group-hover:translate-x-0 transition-all duration-300">
+                {/* View Project Link - Hidden on mobile, shown on hover desktop */}
+                <div className="mt-2 md:mt-4 flex items-center text-accent font-semibold opacity-0 md:group-hover:opacity-100 transform translate-x-[-10px] md:group-hover:translate-x-0 transition-all duration-300 hidden md:flex">
                   <span>Explore Project</span>
                   <span className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
                     →
