@@ -142,7 +142,7 @@ const Projects = () => {
 
   return (
     <section>
-      <h2 className="text-4xl mt-20 font-bold text-center bg-black/50 backdrop-blur-lg py-6 text-white w-full">
+      <h2 className="text-4xl mt-16 sm:mt-20 font-bold text-center bg-black/50 backdrop-blur-lg py-6 text-white w-full">
         Featured Projects
       </h2>
 

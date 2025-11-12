@@ -57,20 +57,19 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Navigation Menu */}
       <div
-        className={`md:hidden absolute top-full left-0 w-full bg-gray-900/98 backdrop-blur-lg border-b border-white/10 transition-all duration-300 ease-in-out ${
+        className={`md:hidden absolute top-full left-0 w-full bg-gray-900/95 backdrop-blur-lg border-b border-white/10 transition-all duration-300 ease-in-out ${
           isActive
-            ? "max-h-80 opacity-100"
+            ? "max-h-96 opacity-100"
             : "max-h-0 opacity-0 overflow-hidden"
         }`}
       >
-        <div className="px-4 py-4 space-y-2">
+        <div className="px-4 py-6 space-y-4">
           {["projects", "skills", "about", "contact"].map((path) => (
             <Link
               key={path}
               to={`/${path}`}
-              className={`block px-4 py-3 font-semibold text-base transition-all duration-300 rounded-lg ${
+              className={`block px-6 py-3 font-semibold text-lg transition-all duration-300 rounded-lg ${
                 isActiveLink(`/${path}`)
                   ? "text-white bg-accent/20 border border-accent/30"
                   : "text-accent hover:text-white hover:bg-white/10"
