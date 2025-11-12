@@ -14,7 +14,9 @@
 html,
 body {
   overflow-x: hidden;
+  width: 100%;
   max-width: 100%;
+  position: relative;
 }
 
 body {
@@ -31,4 +33,25 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for ALL devices and browsers */
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+/* Ensure scrolling still works */
+body {
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+/* Optional: Add momentum scrolling for better mobile experience */
+html {
+  overflow: -moz-scrollbars-none; /* Older Firefox */
+  -webkit-overflow-scrolling: touch; /* iOS momentum scrolling */
 }
