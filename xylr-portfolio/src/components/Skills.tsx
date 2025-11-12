@@ -131,31 +131,31 @@ const Skills = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-3 sm:gap-4">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="group bg-black/50 backdrop-blur-lg p-8 rounded-2xl border border-white/10 text-center transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-2xl hover:border-accent/50"
+              className="group bg-black/50 backdrop-blur-lg p-3 sm:p-4 lg:p-5 rounded-lg sm:rounded-xl border border-white/10 text-center transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-xl hover:border-accent/50 relative min-h-[120px] sm:min-h-[140px]"
             >
               {/* Icon Container */}
-              <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-accent/20 to-blue-500/20 rounded-2xl flex items-center justify-center group-hover:from-accent/30 group-hover:to-blue-500/30 transition-all duration-300">
+              <div className="w-12 h-12 sm:w-12 sm:h-12 lg:w-14 lg:h-14 mx-auto mb-2 sm:mb-3 bg-gradient-to-br from-accent/20 to-blue-500/20 rounded-lg sm:rounded-xl flex items-center justify-center group-hover:from-accent/30 group-hover:to-blue-500/30 transition-all duration-300">
                 <i
-                  className={`${skill.icon} text-6xl text-accent group-hover:text-white group-hover:scale-110 transition-all duration-300`}
+                  className={`${skill.icon} text-3xl sm:text-2xl lg:text-3xl text-accent group-hover:text-white group-hover:scale-110 transition-all duration-300`}
                 ></i>
               </div>
 
               {/* Skill Name */}
-              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-accent transition-colors duration-300">
+              <h3 className="text-xs sm:text-sm font-bold text-white mb-1 group-hover:text-accent transition-colors duration-300 line-clamp-2">
                 {skill.name}
               </h3>
 
               {/* Skill Description */}
-              <p className="text-gray-300 group-hover:text-white transition-colors duration-300">
+              <p className="text-[10px] sm:text-xs text-gray-300 group-hover:text-white transition-colors duration-300 line-clamp-2 leading-tight">
                 {skill.description}
               </p>
 
               {/* Hover Effect Border */}
-              <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-accent/30 transition-all duration-300 pointer-events-none"></div>
+              <div className="absolute inset-0 rounded-lg sm:rounded-xl border-2 border-transparent group-hover:border-accent/30 transition-all duration-300 pointer-events-none"></div>
             </div>
           ))}
         </div>
