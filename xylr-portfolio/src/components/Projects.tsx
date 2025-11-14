@@ -14,7 +14,7 @@ const Projects = () => {
       image: "/images/travel911.jpeg",
       tags: ["VITE", "TAILWIND CSS", "TYPESCRIPT"],
       description:
-        "Discover countries with travel information, currency conversion, flight details, weather forecasts and more",
+        "Discover countries' travel info, currency conversion, flights, weather forecasts etc.",
     },
     {
       title: "Visual Dictionary",
