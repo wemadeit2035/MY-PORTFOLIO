@@ -9,6 +9,14 @@ const Projects = () => {
         "Online store with user authentication, admin panel, and much more",
     },
     {
+      title: "Travel Guide 0.2",
+      link: "https://travel911.netlify.app",
+      image: "/images/travel911.jpeg",
+      tags: ["VITE", "TAILWIND CSS", "TYPESCRIPT"],
+      description:
+        "Discover countries with travel information, currency conversion, flight details, weather forecasts and more",
+    },
+    {
       title: "Visual Dictionary",
       link: "https://depicted.netlify.app/",
       image: "/images/depicted.webp",
