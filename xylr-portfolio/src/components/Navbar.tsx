@@ -23,9 +23,9 @@ const Navbar = () => {
         <Link to="/" onClick={closeMenu} className="flex items-center">
           <img
             title="logo"
-            src="/images/logo.webp"
+            src="/images/logo.png"
             alt="XYLR"
-            className="h-8 w-auto transition-transform duration-300 hover:scale-110"
+            className="h-10 w-auto transition-transform duration-300 hover:scale-110"
           />
         </Link>
 
