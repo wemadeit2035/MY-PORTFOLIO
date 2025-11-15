@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Projects = () => {
   const projects = [
     {
@@ -150,7 +152,7 @@ const Projects = () => {
 
   return (
     <section>
-      <h2 className="text-4xl mt-16 sm:mt-20 font-bold text-center bg-black/50 backdrop-blur-lg py-6 text-white w-full">
+      <h2 className="text-4xl mt-16 font-bold text-center bg-black/50 backdrop-blur-lg py-6 text-white w-full">
         Featured Projects
       </h2>
 
@@ -229,14 +231,14 @@ const Projects = () => {
               Let's build something amazing together!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="#contact"
+              <Link
+                to="/contact"
                 className="bg-accent text-primary font-bold py-3 px-8 rounded-full hover:bg-[#1fe000] transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 Start a Project
-              </a>
+              </Link>
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/wemadeit2035"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/10 text-white font-bold py-3 px-8 rounded-full border border-white/20 hover:bg-white/20 transform hover:-translate-y-1 transition-all duration-300"

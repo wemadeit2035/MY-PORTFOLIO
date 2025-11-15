@@ -5,7 +5,7 @@ const Footer = () => {
         {/* Social Links */}
         <div className="flex justify-center space-x-6 mb-4">
           {[
-            { icon: "github", href: "https://github.com/tripsound" },
+            { icon: "github", href: "https://github.com/wemadeit2035" },
             {
               icon: "linkedin",
               href: "https://www.linkedin.com/in/amos-wetu-8b114825a/",

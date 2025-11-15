@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Skills = () => {
   const skills = [
     {
@@ -46,7 +48,7 @@ const Skills = () => {
     <section>
       <div className="max-w-7xl mx-auto px-4 py-12">
         {/* Additional Skills Section */}
-        <div className="mt-20 bg-black/50 backdrop-blur-lg rounded-2xl p-8 mb-10 border border-white/10">
+        <div className="mt-10 bg-black/50 backdrop-blur-lg rounded-2xl p-8 mb-10 border border-white/10">
           <h3 className="text-2xl font-bold text-white text-center mb-8">
             Technical Proficiencies
           </h3>
@@ -166,9 +168,12 @@ const Skills = () => {
               With a strong foundation in modern web technologies, I'm equipped
               to handle both frontend and backend challenges.
             </p>
-            <button className="bg-accent text-primary font-bold py-3 px-8 rounded-full hover:bg-[#1fe000] transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <Link
+              to="/contact"
+              className="bg-accent text-primary font-bold py-3 px-8 rounded-full hover:bg-[#1fe000] transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
               Let's Collaborate
-            </button>
+            </Link>
           </div>
         </div>
       </div>
