@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full px-4 py-3 bg-gray-900/95 backdrop-blur-lg z-50 border-b border-white/10">
+    <nav className="fixed top-0 w-full px-4 py-1 bg-gray-900/95 backdrop-blur-lg z-50 border-b border-white/10">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link to="/" onClick={closeMenu} className="flex items-center">
@@ -25,7 +25,7 @@ const Navbar = () => {
             title="logo"
             src="/images/logo.png"
             alt="XYLR"
-            className="h-10 w-auto transition-transform duration-300 hover:scale-110"
+            className="h-12 w-auto transition-transform duration-300 hover:scale-110"
           />
         </Link>
 
@@ -49,7 +49,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Toggle */}
         <button
-          className="md:hidden text-accent text-xl p-2 hover:bg-white/10 rounded-lg transition-colors duration-300"
+          className="md:hidden text-accent text-4xl p-2 hover:bg-white/10 rounded-lg transition-colors duration-300"
           onClick={() => setIsActive(!isActive)}
           aria-label="Toggle menu"
         >
