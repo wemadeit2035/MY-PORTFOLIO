@@ -3,6 +3,14 @@ import { Link } from "react-router-dom";
 const Projects = () => {
   const projects = [
     {
+      title: "POS System",
+      link: "https://bud-brush.vercel.app",
+      image: "/images/pos.jpeg",
+      tags: ["VITE", "SUPABASE", "JAVASCRIPT"],
+      description:
+        "Online POS System (CANAStore) with sales tracking, inventory management, and much more",
+    },
+    {
       title: "Virtual Store",
       link: "https://mystore-drab.vercel.app",
       image: "/images/mystore.jpeg",
@@ -30,7 +38,8 @@ const Projects = () => {
       link: "https://textbinary.netlify.app/",
       image: "/images/textbinary.webp",
       tags: ["VITE", "REACT", "TYPESCRIPT"],
-      description: "Transform any text to binary code (1s & 0s)",
+      description:
+        "Transform any text to binary code (1s & 0s) Create a secret message or just for fun",
     },
     {
       title: "World Clock",
@@ -39,14 +48,7 @@ const Projects = () => {
       tags: ["VITE", "REACT", "TYPESCRIPT"],
       description: "Display the current time of all major timezones",
     },
-    {
-      title: "Personal Trainer Portfolio",
-      link: "https://prymefit.netlify.app/",
-      image: "/images/primefitimage.webp",
-      tags: ["HTML", "CSS", "JAVASCRIPT"],
-      description:
-        "Customizable portfolio website template with professional presentation",
-    },
+
     {
       title: "Resume Builder",
       link: "https://resunate.netlify.app/",
@@ -62,14 +64,7 @@ const Projects = () => {
       description:
         "Simple and straight forward currency converter with integrated API",
     },
-    {
-      title: "Currency Converter 2.0",
-      link: "https://curron.netlify.app/",
-      image: "/images/converter.webp",
-      tags: ["NEXT", "TAILWIND", "REACT"],
-      description:
-        "Simple and straight forward currency converter with integrated API",
-    },
+
     {
       title: "Dog Breed Explorer",
       link: "https://breedfinder.netlify.app/",
@@ -78,13 +73,7 @@ const Projects = () => {
       description:
         "Search/select a dog breed and get images and information about that breed",
     },
-    {
-      title: "StopWatch",
-      link: "https://stoptyme.netlify.app/",
-      image: "/images/stopimg.webp",
-      tags: ["HTML", "CSS", "JAVASCRIPT"],
-      description: "Simple, customizable and easy to user stopwatch",
-    },
+
     {
       title: "Color Harmonizer Tool",
       link: "https://harmonizer.netlify.app/",
@@ -98,24 +87,9 @@ const Projects = () => {
       link: "https://kloch.netlify.app/",
       image: "/images/DigiClockimg.webp",
       tags: ["HTML", "CSS", "JAVASCRIPT"],
-      description:
-        "Simple but fully functional digital clock with the date and time zone",
+      description: "Simple digital clock with the date and time zone",
     },
-    {
-      title: "Cafe Website",
-      link: "https://inhouze.netlify.app/",
-      image: "/images/inhouseimg.webp",
-      tags: ["HTML", "CSS", "JAVASCRIPT"],
-      description:
-        "Minimalistic cafe website template focused on usability and readability",
-    },
-    {
-      title: "Scientific Calculator",
-      link: "https://sciculator.netlify.app/",
-      image: "/images/calimg.webp",
-      tags: ["HTML", "CSS", "JAVASCRIPT"],
-      description: "Scientific Calculator with many advanced features",
-    },
+
     {
       title: "Travel Guide",
       link: "https://got2go.netlify.app/",
@@ -123,30 +97,6 @@ const Projects = () => {
       tags: ["HTML", "CSS", "JAVASCRIPT"],
       description:
         "A prototype travel guide with global country data, currency converter, weather, news and other API",
-    },
-    {
-      title: "Rental Statement (Document)",
-      link: "https://codecu.netlify.app/",
-      image: "/images/statement.webp",
-      tags: ["HTML", "CSS"],
-      description:
-        "A simple rental statement created with HTML and CSS, demonstrating the versatility of code",
-    },
-    {
-      title: "CV/Resume Website",
-      link: "https://webpagecv.netlify.app/",
-      image: "/images/cvappimg.webp",
-      tags: ["VITE", "REACT", "TYPESCRIPT"],
-      description:
-        "CV website template to showcase skills, experience, and achievements effectively",
-    },
-    {
-      title: "E-com Website (in progress)",
-      link: "https://fashionfab.netlify.app/",
-      image: "/images/ecom.webp",
-      tags: ["VITE", "REACT", "TYPESCRIPT"],
-      description:
-        "E-commerce website with authentication, admin panel, dashboard and much more",
     },
   ];
 
